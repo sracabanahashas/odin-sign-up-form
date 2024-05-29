@@ -72,6 +72,7 @@ input {
     width: 100%;
 }
 
+
 input:invalid {
     border: 1px solid red;
 }
@@ -81,6 +82,31 @@ input:focus {
     border: 2px solid rgb(28, 105, 138);
     box-shadow: 1px 1px grey;
 }
+
+input + span {
+    position: relative;
+}
+
+input[type="email"]:invalid + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "* Please enter an email address";
+    color: red;
+    padding: 5px 8px;
+    top: -4px;
+    left: -6px;
+}
+
+input[type="tel"]:invalid + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "* Please enter a phone number";
+    color: red;
+    padding: 5px 8px;
+    top: -4px;
+    left: -6px;
+}
+
 
 .submit {
 
