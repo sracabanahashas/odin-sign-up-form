@@ -17,7 +17,7 @@
         </div>
         <div class="formWrapper">
             <p>Let's do this!</p>
-            <form action="" class="signup-Form">
+            <form action="" class="signup-Form" id="form">
                 <div class="form-row">
                     <div>
                         <label for="first-name">First Name</label>
@@ -44,17 +44,21 @@
                 <div class="form-row">
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                        ">
+                    <span></span>
                     </div>
                     <div>
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
+                        <input type="password" id="confirmPassword" name="confirmPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                        ">
+                    <span></span>
                     </div>
                 </div>
             </form>
         </div>
         <div class="submit">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="form">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
