@@ -50,8 +50,10 @@ flex-direction: column;
 }
 
 .heroText {
-    width: 300px;
-    padding: 30px;
+    width: auto;
+    padding: 10vh 5vh 5vh 5vh;
+    max-width: 90vh;
+    font-weight: bold;
 }
 
 .formWrapper {
@@ -59,15 +61,15 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 40px;
     
 }
 
 .form-row {
     display: flex;
-    padding: 8px;
+    padding: 8px 0 8px 0;
     gap: 45px;
     justify-content: start;
+    max-width: 90vh;
 
 }
 
